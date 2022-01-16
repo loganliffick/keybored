@@ -1,0 +1,7 @@
+# package
+package.json
+package-lock.json
+
+# build
+keybored.min.js
+keybored.esm.js

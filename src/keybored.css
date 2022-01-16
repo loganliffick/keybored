@@ -1,0 +1,77 @@
+:root {
+  --key-color: #020025;
+  --key-background: #ffffff;
+  --key-border-color: rgba(2, 0, 37, 0.4);
+  --shadow-color: #020025;
+  --shadow-static: 0px 6px 0px 0px;
+  --shadow-hover: 0px 4px 0px 0px;
+  --shadow-active: 0px 0px 0px 0px;
+  --key-static: translate(0px, 0px);
+  --key-hover: translate(0px, 2px);
+  --key-active: translate(0px, 6px);
+}
+
+button {
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 24px;
+  text-decoration: none;
+}
+
+.keyButton {
+  background: var(--key-background);
+  border: 1px solid var(--key-border-color);
+  border-radius: 10px;
+  box-shadow: var(--shadow-static) var(--shadow-color);
+  color: var(--key-color);
+  font-size: inherit;
+  line-height: inherit;
+  transition: all 0.1s ease;
+}
+
+.keyButton:hover {
+  box-shadow: var(--shadow-hover) var(--shadow-color);
+  transform: var(--key-hover);
+}
+
+.keyButton:active {
+  box-shadow: var(--shadow-active) var(--shadow-color);
+  transform: var(--key-active);
+}
+
+.keyPress {
+  animation: keyPress 0.15s ease;
+}
+
+@keyframes keyPress {
+  0% {
+    box-shadow: var(--shadow-static) var(--shadow-color);
+    transform: var(--key-static);
+  }
+  50% {
+    box-shadow: var(--shadow-active) var(--shadow-color);
+    transform: var(--key-active);
+  }
+  100% {
+    box-shadow: var(--shadow-static) var(--shadow-color);
+    transform: var(--key-static);
+  }
+}
+
+.keyboardContainer {
+  display: grid;
+  grid-gap: 12px 8px;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(4, auto);
+  touch-action: manipulation;
+}
+
+.wasdContainer {
+  display: grid;
+  grid-gap: 12px 8px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, auto);
+  touch-action: manipulation;
+}

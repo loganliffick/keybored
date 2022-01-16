@@ -1,0 +1,26 @@
+{
+  "name": "keybored",
+  "files": ["dist"],
+  "main": "./dist/keybored.umd.js",
+  "module": "./dist/keybored.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/keybored.es.js",
+      "require": "./dist/keybored.umd.js"
+    }
+  },
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.0.7",
+    "vite": "^2.7.2"
+  }
+}
