@@ -1,15 +1,26 @@
 {
   "name": "keybored",
   "files": ["dist"],
-  "main": "./dist/keybored.umd.js",
-  "module": "./dist/keybored.es.js",
+  "main": "./dist/keybored.umd.jsx",
+  "module": "./dist/keybored.es.jsx",
   "exports": {
     ".": {
-      "import": "./dist/keybored.es.js",
-      "require": "./dist/keybored.umd.js"
+      "import": "./dist/keybored.es.jsx",
+      "require": "./dist/keybored.umd.jsx"
     }
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "description": "Your new favorite on-screen keyboard!",
+  "author": "Logan Liffick",
+  "license": "MIT",
+  "repository": "logan-liffick/keybored",
+  "keywords": [
+    "react",
+    "keyboard",
+    "npm",
+    "package",
+    "loganliffick"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
