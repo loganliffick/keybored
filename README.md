@@ -15,7 +15,7 @@
 $ npm i keyboredjs
 ```
 
-<p>Add the <a href="#">CSS file</a> to your project.</p>
+<p>Add the <a href="https://github.com/loganliffick/keybored/blob/main/src/keybored.css">CSS file</a> to your project.</p>
 
 ## Basic Usage
 
