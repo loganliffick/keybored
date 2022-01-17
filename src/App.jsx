@@ -1,5 +1,6 @@
-import './keybored.css';
-import Keybored from './keybored';
+import './css/index.css';
+import './css/keybored.css';
+import Keybored from './components/keybored';
 
 Keybored({
   whatKey: false,

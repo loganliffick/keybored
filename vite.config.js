@@ -6,7 +6,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/keybored.jsx'),
+      entry: path.resolve(__dirname, 'src/components/keybored.js'),
       name: 'keybored',
       fileName: (format) => `keybored.${format}.js`,
     },

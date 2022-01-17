@@ -1,7 +1,7 @@
 :root {
-  --key-color: #020025;
   --key-background: #ffffff;
   --key-border-color: rgba(2, 0, 37, 0.4);
+  --key-color: #020025;
   --shadow-color: #020025;
   --shadow-static: 0px 6px 0px 0px;
   --shadow-hover: 0px 4px 0px 0px;
@@ -60,7 +60,7 @@ button {
   }
 }
 
-.keyboardContainer {
+.stdContainer {
   display: grid;
   grid-gap: 12px 8px;
   grid-template-columns: repeat(10, 1fr);

@@ -40,7 +40,7 @@ const Keybored = (props) => {
       gridArea = [
         '"Q W E R T Y U I O P" "A S D F G H J K L ⏎" ". Z X C V B N M ⌫ ⏎" ". . ⎵ ⎵ ⎵ ⎵ ⎵ . . ."',
       ];
-      container.classList.add('keyboardContainer');
+      container.classList.add('stdContainer');
     } else if (props.keyboard === 'wasd') {
       keys = ['W', 'A', 'S', 'D', 'Space'];
       gridArea = ['". W . . ." "A S D . ." ". ⎵ ⎵ ⎵ ."'];
