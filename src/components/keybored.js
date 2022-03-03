@@ -1,9 +1,11 @@
 const Keybored = (props) => {
   const output = props.function;
+  const nestIn = props.nestIn;
 
   const buildKeyboard = () => {
     let keys;
     let gridArea;
+    let nest = document.querySelector(nestIn);
     const container = document.createElement('div');
     if (props.keyboard === 'std') {
       keys = [
@@ -47,7 +49,7 @@ const Keybored = (props) => {
       container.classList.add('wasdContainer');
     }
 
-    document.body.appendChild(container);
+    nest.appendChild(container);
     container.style.gridTemplateAreas = gridArea[0];
 
     const keyCreate = (key) => {

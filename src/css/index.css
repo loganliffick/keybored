@@ -27,6 +27,21 @@ a {
   text-decoration: none;
 }
 
+.orange {
+  background: orange;
+  width: 200px;
+  height: 200px;
+}
+
+.blue {
+  background: blue;
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  top: 1000px;
+  left: 50px;
+}
+
 #write {
   font-size: 40px;
   position: absolute;
